@@ -1,5 +1,31 @@
 .container{
-    background-color: rgb(102, 68, 134);
+    background-color: rgb(223, 158, 158);
     display: flex;
-    flex: 1
+    flex-direction: column;
+    flex: 1;
+    border-radius: 20px;
+    
+}
+
+.seta-cima:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+  
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #2e7d32;
+  }
+
+.number1 {
+    color: #2e7d32;
+
+}
+
+.number2 {
+    color: #2e7d32;
+
 }
