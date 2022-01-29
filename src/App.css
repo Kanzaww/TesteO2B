@@ -1,0 +1,11 @@
+.cardsRow{
+    display: flex;
+    padding: 20px;
+    background-color: cadetblue;
+    /* justify-content:space-between;  */
+    border-radius: 20px;
+}
+
+.divider{
+    width: 10px;
+}

@@ -1,0 +1,5 @@
+.container{
+    background-color: rgb(102, 68, 134);
+    display: flex;
+    flex: 1
+}
