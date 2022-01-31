@@ -1,11 +1,17 @@
 .cardsRow{
     display: flex;
-    padding: 20px;
-    background-color: cadetblue;
-    /* justify-content:space-between;  */
-    border-radius: 20px;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #EEEEEE;  
 }
 
+@media screen and (max-width: 900px) {
+    .cardsRow {
+        flex-direction: column;
+    }
+  }
+  
 .divider{
-    width: 10px;
+    width: 1em;
 }

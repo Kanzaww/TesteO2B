@@ -1,10 +1,22 @@
 import './App.css';
-import ChartCard from './components/ChartCard'
+import ChartCard from './components/ChartCard/ChartCard'
 import {timeToEmitNF, timePerStage, optionsTimePerStage, amountNFpending, topUnity, amountErrors, averageTimePerHour,optionsAverageTimePerHour } from './helper'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 function App() {   
   return (
     <div className="App">
+      <head>
+        <tittle> Home | Analytics O2B</tittle>
+      </head>
+      
+
+      <Header
+       tittle={"Analytics"}
+       />
+      
+       
 
       <div className="cardsRow">
           <ChartCard 
@@ -23,7 +35,7 @@ function App() {
             chartData={timePerStage}
             chartType={"AreaChart"}
             options={optionsTimePerStage} 
-          
+            flex={2}
           />
             <div className="divider" />
             
@@ -49,13 +61,15 @@ function App() {
       </div>  
 
 
-      <div className="cardsRow">
+      <div className="cardsRow">    
       <ChartCard 
             tittle={"TOP 10 UNIDADES COM MAIOR TEMPO PARA EMISSÃO NF"} 
             subTittle={"Últimos 30 minutos"}
             chartData={topUnity}
             chartType={"ColumnChart"}
             />
+            
+            <div className="divider" />
             <ChartCard 
             tittle={"QUANTIDADE DE ERROS NO SEFAZ"} 
             subTittle={"Últimos 7 dias, agrupado por dia"}
@@ -64,7 +78,11 @@ function App() {
              />
           <div className="divider" />
       </div>  
+      <Footer />;
+
     </div>
+
+  
   );
 }
 

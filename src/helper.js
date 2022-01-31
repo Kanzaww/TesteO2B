@@ -8,17 +8,25 @@ export const timeToEmitNF = [
     ];
 
 export const timePerStage= [
-    ["Year", "Sales", "Expenses"],
-    ["2013", 1000, 400],
-    ["2014", 1170, 460],
-    ["2015", 660, 1120],
-    ["2016", 1030, 540],
+    ["contador", "SAP recebe", "Numeração",],
+    ["10:00", 12, 26],
+    ["10:30", 16, 28],
+    ["11:00", 15, 22],
+    ["11:30", 19, 30],
+    ["12:00", 25, 41],
+    ["12:30", 24, 28],
+    ["13:00", 23, 34],
+    ["13:30", 18, 29],
+    ["14:00", 23, 33],
+    ["14:30", 16, 25],
+    ["15:00", 25, 46],
+    ["15:30", 26, 47],
   ];
 
 export const optionsTimePerStage = {
     isStacked: true,
     height: 300,
-    legend: { position: "top", maxLines: 3 },
+    legend: { position: "side", maxLines: 5 },
     vAxis: { minValue: 0 },
 };
 
@@ -35,12 +43,13 @@ export const amountNFpending = [
 
 
 export const averageTimePerHour = [
-    ["", "", ""],
-    ["New York City, NY", 8175000, 8008000],
-    ["Los Angeles, CA", 3792000, 3694000],
-    ["Chicago, IL", 2695000, 2896000],
-    ["Houston, TX", 2099000, 1953000],
-    ["Philadelphia, PA", 1526000, 1517000],
+    ["contador", "SAP recebe", "Numeração",],
+    ["00h", 10, 48,],
+    ["01h", 12, 16],
+    ["02h", 38, 52],
+    ["03h", 25, 28],
+    ["04h", 37, 56],
+    ["05h", 37, 56],
     ];
       
 export const optionsAverageTimePerHour = {
